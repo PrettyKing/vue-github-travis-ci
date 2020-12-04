@@ -1,5 +1,5 @@
 const { CDN } = process.env;
-
+var qiniuPrefix = require('./qiniu-upload-prefix');
 module.exports = {
-    // baseUrl: CDN, // 对应webpack 中的 publicPath --> CDN 地址
+  publicPath: CDN +  qiniuPrefix.prefix, // 对应webpack 中的 publicPath --> CDN 地址
 };
