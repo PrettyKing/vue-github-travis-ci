@@ -5,6 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "prebuild": "rimraf dist",
+    "postbuild": "node sync-cdn.js",
     "prod": "vue-cli-service build && node ./qiniu-test.js && node sync-cdn.js"
   },
   "dependencies": {
