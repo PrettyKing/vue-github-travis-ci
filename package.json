@@ -7,8 +7,7 @@
     "build": "vue-cli-service build",
     "prebuild": "rimraf dist",
     "postbuild": "node sync-cdn.js",
-    "test": "echo \" ci run success \"",
-    "build-qiniu": "vue-cli-service build && node ./qiniu-test.js"
+    "prod": "vue-cli-service build && node ./qiniu-test.js && node sync-cdn.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",

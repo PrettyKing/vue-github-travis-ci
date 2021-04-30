@@ -1,5 +1,7 @@
 # vue-github-travis-ci
 
+## 环境构建
+
 - 注:如果要忽略的文件已被 git 管理,需要先移除,命令如下:
 
   ```shell
