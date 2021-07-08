@@ -7,9 +7,6 @@ cache:
   - node_modules
 env:
 - SERVER_IP_ADDRESS=8.129.231.174
-addons:
-  ssh_known_hosts:
-  - 8.129.231.174
 script:
 - npm install
 after_script:
@@ -19,3 +16,5 @@ before_install:
   -in id_rsa_deploy.enc -out ~\/.ssh/id_rsa_deploy -d
 - chmod 600 ~\/.ssh/id_rsa_deploy
 - echo "success!!!!"
+addons:
+  ssh_known_hosts: 8.129.231.174
