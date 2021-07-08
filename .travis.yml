@@ -17,4 +17,5 @@ after_script:
 before_install:
 - openssl aes-256-cbc -K $encrypted_5d14e20a1947_key -iv $encrypted_5d14e20a1947_iv
   -in id_rsa_deploy.enc -out ~\/.ssh/id_rsa_deploy -d
-
+- chmod 600 ~\/.ssh/id_rsa_deploy
+- echo "success!!!!"
